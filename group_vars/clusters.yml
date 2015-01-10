@@ -1,0 +1,54 @@
+---
+cluster_users:
+  - addunham
+  - alger
+  - amahedy
+  - arom2
+  - bcomnes
+  - hamed2
+  - helaire
+  - jblac2
+  - jialij
+  - jmillar
+  - lawaj
+  - lubrown
+  - mdj2
+  - mkapp
+  - nocooper
+  - nud
+  - radlin2
+  - rclaire
+  - rmaxwell
+  - shigemot
+  - sisson
+  - sju2
+  - slauren
+  - staplej
+  - td3
+  - theod
+  - theresa5
+  - tshott
+  - virca
+  - will
+  - yyankina
+
+cluster_groups:
+  wheel:
+    - alger
+    - theod
+    - bcomnes
+    - will
+    - mdj2
+    - staplej
+  gaussian:
+    - bcomnes
+    - theod
+    - alger
+    - will
+    - theresa5
+    - shigemot
+    - mkapp
+    - virca
+    - nud
+    - radlin2
+    - sju2
