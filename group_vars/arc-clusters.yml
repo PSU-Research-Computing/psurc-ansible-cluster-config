@@ -9,7 +9,9 @@ cluster_users:
   - uid: helaire
   - uid: jblac2
   - uid: jialij
+  - uid: jiaming
   - uid: jmillar
+  - uid: jokelley
   - uid: lawaj
   - uid: lubrown
   - uid: mdj2
@@ -28,6 +30,7 @@ cluster_users:
   - uid: theod
   - uid: theresa5
   - uid: tshott
+  - uid: tsmit2
   - uid: virca
   - uid: will
   - uid: yyankina
