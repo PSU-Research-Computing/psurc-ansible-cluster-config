@@ -1,19 +1,12 @@
 ---
 - name: Look up UIDs from ldapsearch
   shell: "ldapsearch -x uid={{ item.uid }} uidnumber gecos | egrep '^(uidnumber|gecos): ' | awk -F': ' '{print $2}'"
-  with_items:
-    - uid: bcomnes
-    - uid: wbaldwin
-    - uid: waldman
-    - uid: kdotyhar
-    - uid: fsdklflafdsf
+  with_items: cluster_users
   register: user_info
   always_run: yes
   changed_when: "user_info.rc != 0"
   # Fail if no ldap results are found
   failed_when: "user_info.stdout_lines == []"
-
-- debug: var=user_info
 
 - name: ensure user accounts are created
   user: name="{{ item.item.uid }}"
