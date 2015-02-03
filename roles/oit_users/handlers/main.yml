@@ -1,0 +1,4 @@
+---
+- name: sync users
+  command: rocks sync users
+  sudo: yes

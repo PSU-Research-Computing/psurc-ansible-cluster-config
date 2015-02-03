@@ -1,5 +1,5 @@
 ---
-- hosts: clusters
+- hosts: arc-clusters
   gather_facts: true
   roles:
-    - { role: oit_users, users: cluster_users, groups: cluster_groups }
+    - { role: oit_users}
