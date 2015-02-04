@@ -2,9 +2,16 @@
 cluster_users:
   - uid: addunham
   - uid: alger
+    groups:
+      - gaussian
+      - wheel
   - uid: amahedy
   - uid: arom2
   - uid: bcomnes
+    groups:
+      - gaussian
+      - wheel
+      - google-otp
   - uid: hamed2
   - uid: helaire
   - uid: jblac2
@@ -15,22 +22,50 @@ cluster_users:
   - uid: lawaj
   - uid: lubrown
   - uid: mdj2
+    groups:
+      - wheel
   - uid: mkapp
+    groups:
+      - gaussian
+      - wheel
   - uid: nocooper
   - uid: nud
+    groups:
+      - gaussian
   - uid: radlin2
+    groups:
+      - gaussian
   - uid: rclaire
   - uid: rmaxwell
   - uid: shigemot
+    groups:
+      - gaussian
   - uid: sisson
   - uid: sju2
+    groups:
+      - gaussian
   - uid: slauren
+    groups:
+      - gaussian
   - uid: staplej
+    groups:
+      - wheel
   - uid: td3
   - uid: theod
+    groups:
+      - gaussian
+      - wheel
   - uid: theresa5
+    groups:
+      - gaussian
   - uid: tshott
   - uid: tsmit2
   - uid: virca
+    groups:
+      - gaussian
   - uid: will
+    groups:
+      - gaussian
+      - wheel
   - uid: yyankina
+  - uid: wsl
