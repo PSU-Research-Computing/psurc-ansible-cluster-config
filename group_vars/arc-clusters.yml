@@ -11,7 +11,6 @@ cluster_users:
     groups:
       - gaussian
       - wheel
-      - google-otp
   - uid: hamed2
   - uid: helaire
   - uid: jblac2
