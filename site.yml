@@ -2,4 +2,4 @@
 - hosts: arc-clusters
   gather_facts: true
   roles:
-    - { role: oit_users}
+    - cluster_users

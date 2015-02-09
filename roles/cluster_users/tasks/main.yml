@@ -12,7 +12,7 @@
   user: name="{{ item.item.uid }}"
     uid="{{ item.stdout_lines[0] }}"
     comment="{{ item.stdout_lines[1] }}"
-    groups="{{ item.item.groups | default() | join(',') }}"
+    groups="{{ item.item.groups| default([]) | join(',') or omit }}"
   with_items: user_info.results
   sudo: yes
   notify: sync users

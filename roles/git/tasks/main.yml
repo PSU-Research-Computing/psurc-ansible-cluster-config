@@ -1,0 +1,12 @@
+---
+- vars:
+    git_version: git-2.3.0.tar.gz
+
+- name: download latest version of git
+  get_url: url=https://www.kernel.org/pub/software/scm/git/{{ git_version }}.tar.gz
+    dest='/share/apps/src'
+    sha256sum=ba2fe814e709a5d0f034ebe82083fce7feed0899b3a8c8b3adf1c5a85d1ce9ac
+  register: git_archive
+  sudo: true
+
+- debug: var=git_archive
