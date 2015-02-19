@@ -27,7 +27,6 @@ cluster_users:
   - uid: mkapp
     groups:
       - gaussian
-      - wheel
   - uid: nocooper
   - uid: nud
     groups:
@@ -54,7 +53,6 @@ cluster_users:
   - uid: theod
     groups:
       - gaussian
-      - wheel
   - uid: theresa5
     groups:
       - gaussian
@@ -69,3 +67,5 @@ cluster_users:
       - wheel
   - uid: yyankina
   - uid: wsl
+  - uid: wpatt2
+  - uid: alexan3
