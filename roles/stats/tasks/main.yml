@@ -1,0 +1,3 @@
+---
+- name: Get me the stats sir
+  debug: msg="{{ ansible_hostname }} VCPUs {{ansible_processor_vcpus}} Mem(MB){{ ansible_memtotal_mb}}  "
