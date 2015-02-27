@@ -6,3 +6,5 @@ install:
 
 facts:
 	ansible all -i hosts -m setup -c
+hydraFacts:
+	ansible-playbook -i hydra gather.yml

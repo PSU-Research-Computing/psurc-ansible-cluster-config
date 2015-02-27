@@ -1,0 +1,6 @@
+---
+- hosts: 
+    - compute-1
+  gather_facts: true
+  roles:
+    - stats
