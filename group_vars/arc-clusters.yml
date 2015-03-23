@@ -68,5 +68,11 @@ cluster_users:
   - uid: yyankina
   - uid: wsl
   - uid: wpatt2
+    groups:
+      - wheel
   - uid: alexan3
   - uid: jstraus
+  - uid: elliot
+  - uid: lutkus
+    groups:
+      - gaussian
