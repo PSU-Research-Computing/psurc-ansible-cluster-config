@@ -76,3 +76,4 @@ cluster_users:
   - uid: lutkus
     groups:
       - gaussian
+  - uid: pbt
