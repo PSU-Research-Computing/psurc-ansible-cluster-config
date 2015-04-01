@@ -1,4 +1,9 @@
 ---
+cluster_groups:
+- wheel
+- gaussian
+- bpa
+
 cluster_users:
   - uid: addunham
   - uid: alger
@@ -57,6 +62,8 @@ cluster_users:
     groups:
       - gaussian
   - uid: tshott
+    groups:
+      - bpa
   - uid: tsmit2
   - uid: virca
     groups:
@@ -77,3 +84,6 @@ cluster_users:
     groups:
       - gaussian
   - uid: pbt
+  - uid: d6ta
+    groups: 
+      - bpa

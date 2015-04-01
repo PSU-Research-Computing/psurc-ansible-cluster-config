@@ -1,4 +1,9 @@
 ---
+- name: ensure groups are created
+  group: name={{ item }} state=present
+  with_items: cluster_groups
+  sudo: yes
+
 - name: Look up UIDs from ldapsearch
   shell: "ldapsearch -x uid={{ item.uid }} uidnumber gecos | egrep '^(uidnumber|gecos): ' | awk -F': ' '{print $2}'"
   with_items: cluster_users
