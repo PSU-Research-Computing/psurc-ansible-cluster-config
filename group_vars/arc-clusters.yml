@@ -20,6 +20,8 @@ cluster_users:
   - uid: helaire
   - uid: jblac2
   - uid: jialij
+    groups:
+      - bpa
   - uid: jiaming
   - uid: jmillar
   - uid: jokelley
