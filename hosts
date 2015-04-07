@@ -10,6 +10,6 @@ hecate.rc.pdx.edu
 arc-compute
 arc-clusters
 
-[arc:vars]
-ansible_ssh_user=bcomnes
+#[arc:vars]
+#ansible_ssh_user=bcomnes
 
