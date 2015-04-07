@@ -87,5 +87,7 @@ cluster_users:
       - gaussian
   - uid: pbt
   - uid: d6ta
-    groups: 
+    groups:
       - bpa
+  - uid: wbaldwin
+  - uid: anne
