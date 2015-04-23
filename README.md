@@ -9,9 +9,9 @@ The easiest way to configure your local machine to work with this ansible script
 
 Create new entry:
 
-.. code-block:: sh
-
+```
 	Host *.rc.pdx.edu
 		User <username>
+```
 
 Replace <username> with your username.
