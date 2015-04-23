@@ -11,7 +11,7 @@ Create new entry:
 
 .. code-block:: sh
 
-Host *.rc.pdx.edu
-	User <username>
+	Host *.rc.pdx.edu
+		User <username>
 
 Replace <username> with your username.
