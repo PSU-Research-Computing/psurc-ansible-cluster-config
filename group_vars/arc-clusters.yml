@@ -79,6 +79,7 @@ cluster_users:
   - uid: wpatt2
     groups:
       - wheel
+      - gaussian
   - uid: alexan3
   - uid: jstraus
   - uid: elliot
