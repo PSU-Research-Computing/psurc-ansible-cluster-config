@@ -1,0 +1,5 @@
+---
+- hosts: arc-clusters
+  gather_facts: true
+  roles:
+    - ldap_sync
