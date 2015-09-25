@@ -95,3 +95,7 @@ cluster_users:
   - uid: jos22
     groups:
       - gaussian
+  - uid: mahan2
+    groups:
+      - wheel
+      - gaussian
