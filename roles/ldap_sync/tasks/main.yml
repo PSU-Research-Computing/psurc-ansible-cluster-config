@@ -18,6 +18,7 @@
     uid="{{ item.stdout_lines[0] }}"
     comment="{{ item.stdout_lines[1] }}"
     groups="{{ item.item.groups| default([]) | join(',') or omit }}"
+    state=present
   with_items: user_info.results
   sudo: yes
 
@@ -35,9 +36,6 @@
   with_subelements:
     - "{{user_ldap_groups.results}}"
     - stdout_lines
-
-- debug: var=item.item.1
-  with_items: "{{gids.results}}"
 
 - name: Create All Research Groups
   group: name={{ item.item.1 }} state=present gid={{ item.stdout }}
