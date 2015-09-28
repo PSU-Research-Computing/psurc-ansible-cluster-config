@@ -5,6 +5,7 @@ cluster_groups:
 - bpa
 
 cluster_users:
+  - uid: fisherda
   - uid: addunham
   - uid: alger
     groups:
@@ -98,4 +99,7 @@ cluster_users:
   - uid: mahan2
     groups:
       - wheel
+      - gaussian
+  - uid: jescobed
+    groups:
       - gaussian
