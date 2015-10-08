@@ -5,6 +5,10 @@ cluster_groups:
 - bpa
 
 cluster_users:
+  - uid: meagher
+    groups:
+      - gaussian
+  - uid: ploikith
   - uid: fisherda
   - uid: addunham
   - uid: alger
