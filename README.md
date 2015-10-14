@@ -14,10 +14,10 @@ Configure Your ssh config and RSA Keys
 Add the following lines to your ssh config:
 ```
 	Host *.rc.pdx.edu
-		User <username>
+		User your_user_name
 ```
 
-Replace '<username>' with your username but leave everything else the same.
+Replace 'your_user_name' with your username but leave everything else the same.
 
 After setting up your ssh config file setup RSA keys on all of the host machines to allow automatic login
 **If you do not setup your RSA keys ansible will not work properly.**
