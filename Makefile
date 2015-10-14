@@ -1,10 +1,14 @@
 check:
 	ansible-playbook -i  hosts site.yml --check --diff -v
 
-install:
+sync:
 	ansible-playbook -i hosts site.yml
+
+group_sync:
+	ansible-playbook -t hosts group_sync_site.yml
 
 facts:
 	ansible all -i hosts -m setup -c
 hydraFacts:
 	ansible-playbook -i hydra gather.yml
+	
