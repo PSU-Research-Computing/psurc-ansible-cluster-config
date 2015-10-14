@@ -1,5 +1,7 @@
 # ansible-arc-cluster
 
+ansible-arc-cluster is a repository that is used to add new users to our clusters Hydra and Gravel at ARC. It was recently extened to sync user IDs and group IDs over from ldap to give users access to share drive. 
+
 Setting Up Your Local Machine
 =============================
 
@@ -9,20 +11,16 @@ First Install ansible on your local machine.
 
 Configure Your ssh config and RSA Keys
 ---------------------------------------
-The easiest way to configure your local machine to work with this ansible script is to set up a ~/.ssh/config file. This allows us to connect with the correct credentials without needing a hard-coded username.
-
-> $ vim ~/.ssh/config
-
-Create new entry:
-
+Add the following lines to your ssh config:
 ```
 	Host *.rc.pdx.edu
 		User <username>
 ```
 
-Replace <username> with your username.
+Replace <username> with your username but leave everything else the same.
 
 After setting up your ssh config file setup RSA keys on all of the host machines to allow automatic login
+**If you do not setup your RSA keys ansible will not work properly**
 
 Adding New Users
 ================
