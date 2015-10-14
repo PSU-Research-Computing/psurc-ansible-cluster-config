@@ -17,10 +17,10 @@ Add the following lines to your ssh config:
 		User <username>
 ```
 
-Replace <username> with your username but leave everything else the same.
+Replace '<username>' with your username but leave everything else the same.
 
 After setting up your ssh config file setup RSA keys on all of the host machines to allow automatic login
-**If you do not setup your RSA keys ansible will not work properly**
+**If you do not setup your RSA keys ansible will not work properly.**
 
 Adding New Users
 ================
