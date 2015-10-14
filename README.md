@@ -5,13 +5,14 @@ ansible-arc-cluster is a repository that is used to add new users to our cluster
 Setting Up Your Local Machine
 =============================
 
-Install ansible
+Install Ansible
 ---------------
-First Install ansible on your local machine.
+First Install Ansible on your local machine.
 
 Configure Your ssh config and RSA Keys
 ---------------------------------------
 Add the following lines to your ssh config:
+
 ```
 	Host *.rc.pdx.edu
 		User your_user_name
@@ -19,7 +20,8 @@ Add the following lines to your ssh config:
 
 Replace 'your_user_name' with your username but leave everything else the same.
 
-After setting up your ssh config file setup RSA keys on all of the host machines to allow automatic login
+After setting up your ssh config file setup RSA keys on all of the host machines to allow automatic login.
+
 **If you do not setup your RSA keys ansible will not work properly.**
 
 Adding New Users
@@ -33,7 +35,7 @@ To add new users modify the file:
     ansible-arc-cluster/group_vars/arc-clusters.yml
 ```
 
-Follow the format speficied below:
+Follow the format specified below:
 
 ```
     cluster_users:
@@ -42,7 +44,7 @@ Follow the format speficied below:
           - <group_name>
 ```
 
-If the user is not requesting access to a sepcific group, ommit the group section.
+If the user is not requesting access to a specific group, omit the group section.
 
 Pushing Changes to the Cluster
 ------------------------------
@@ -57,6 +59,6 @@ This will start adding the new users to the cluster as well as syncing their uid
 
 Commit Your Changes
 -------------------
-After you have succesfully added users commit your changes to github to there is complete list of users.
+After you have successfully added users commit your changes to github so there is complete list of users.
 
 
