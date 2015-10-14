@@ -5,6 +5,55 @@ cluster_groups:
 - bpa
 
 cluster_users:
+  - uid: wanglei
+    groups:
+      - gaussian
+  - uid: keating4
+    groups:
+      - gaussian
+  - uid: robertb
+    groups:
+      - gaussian
+  - uid: jabarnes
+    groups:
+      - gaussian
+  - uid: caoh
+    groups:
+      - gaussian
+  - uid: dd5
+    groups:
+      - gaussian
+  - uid: annduell
+    groups:
+      - gaussian
+  - uid: rgysbers
+    groups:
+      - gaussian
+  - uid: nwk
+    groups:
+      - gaussian
+  - uid: jel5
+    groups:
+      - gaussian
+  - uid: lutkus
+    groups:
+      - gaussian
+  - uid: anilova
+    groups:
+      - gaussian
+  - uid: jsol2
+    groups:
+      - gaussian
+  - uid: tks
+    groups:
+      - gaussian
+  - uid: lst2
+    groups:
+      - gaussian
+  - uid: hwinter
+    groups:
+      - gaussian
+
   - uid: meagher
     groups:
       - gaussian

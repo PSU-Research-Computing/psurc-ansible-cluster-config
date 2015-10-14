@@ -1,6 +1,6 @@
 [arc-clusters]
 hydra.rc.pdx.edu
-gravel.rc.pdx.edu
+#gravel.rc.pdx.edu
 
 [arc-compute]
 circe.rc.pdx.edu
