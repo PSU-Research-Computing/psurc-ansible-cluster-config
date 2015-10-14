@@ -1,6 +1,6 @@
 # ansible-arc-cluster
 
-ansible-arc-cluster is a repository that is used to add new users to our clusters Hydra and Gravel at ARC. It was recently extened to sync user IDs and group IDs over from ldap to give users access to share drive. 
+ansible-arc-cluster is a repository that is used to add new users to our clusters Hydra and Gravel at ARC. It was recently extened to sync user IDs and group IDs over from ldap to give users access to the share drives. 
 
 Setting Up Your Local Machine
 =============================
