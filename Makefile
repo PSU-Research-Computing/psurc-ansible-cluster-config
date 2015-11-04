@@ -5,7 +5,7 @@ sync:
 	ansible-playbook -i hosts site.yml
 
 group_sync:
-	ansible-playbook -t hosts group_sync_site.yml
+	ansible-playbook -i hosts group_sync_site.yml
 
 facts:
 	ansible all -i hosts -m setup -c
