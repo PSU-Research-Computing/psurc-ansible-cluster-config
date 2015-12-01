@@ -156,3 +156,4 @@ cluster_users:
   - uid: jescobed
     groups:
       - gaussian
+  - uid: fmak
