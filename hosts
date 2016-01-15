@@ -1,6 +1,7 @@
 [arc-clusters]
-hydra.rc.pdx.edu
+#hydra.rc.pdx.edu
 #gravel.rc.pdx.edu
+131.252.135.61
 
 [arc-compute]
 circe.rc.pdx.edu
@@ -11,5 +12,5 @@ arc-compute
 arc-clusters
 
 [arc:vars]
-#ansible_ssh_user=wpatt2
+ansible_ssh_user=root
 
