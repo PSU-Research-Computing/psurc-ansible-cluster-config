@@ -1,11 +1,8 @@
 check:
-	ansible-playbook -i  hosts site.yml --check --diff -v
+	ansible-playbook -i  hosts create_users.yml --check --diff -v
 
-sync:
-	ansible-playbook -i hosts site.yml
-
-group_sync:
-	ansible-playbook -i hosts group_sync_site.yml
+create_users:
+	ansible-playbook -i hosts create_users.yml
 
 facts:
 	ansible all -i hosts -m setup -c
