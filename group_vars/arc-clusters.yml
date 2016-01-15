@@ -10,7 +10,6 @@ cluster_users:
       - wheel
       - gaussian
 
-
 enabled_repos:
 - CentOS-Base.repo
 - epel.repo
