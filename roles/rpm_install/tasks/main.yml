@@ -8,7 +8,12 @@
   with_items: all_node_rpms
 
 - name: Check for extend-compute.xml
-  
+  stat: path=/export/rocks/install/site-profiles/6.2/nodes/extend-compute.xml
+  register: extend
+
+- name: Create extend-compute.xml if needed
+  shell: "cp /export/rocks/install/site-profiles/6.2/nodes/skeleton.xml /export/rocks/install/site-profiles/6.2/nodes/extend-compute.xml"
+  when: not extend.stat.exists
 
 - name: Disable Repos
   replace: dest=/etc/yum.repos.d/{{ item }} regexp='^enabled = 1' replace='enabled = 0' backup=yes
