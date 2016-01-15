@@ -1,0 +1,15 @@
+---
+- name: Enable Repos
+  replace: dest=/etc/yum.repos.d/{{ item }} regexp='^enabled = 0' replace='enabled = 1' backup=yes
+  with_items: enabled_repos
+
+- name: Download RPM
+  shell: "yum install --downloadonly --downloaddir=/export/rocks/install/contrib/6.2/x86_64/RPMS {{ item }}"
+  with_items: all_node_rpms
+
+- name: Check for extend-compute.xml
+  
+
+- name: Disable Repos
+  replace: dest=/etc/yum.repos.d/{{ item }} regexp='^enabled = 1' replace='enabled = 0' backup=yes
+  with_items: enabled_repos
