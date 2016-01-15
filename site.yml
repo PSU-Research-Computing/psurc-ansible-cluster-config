@@ -1,5 +1,0 @@
----
-- hosts: arc-clusters
-  gather_facts: true
-  roles:
-    - cluster_users

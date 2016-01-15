@@ -1,0 +1,6 @@
+---
+- name: Create Home Directories
+  file: path=/export/home/{{ item.name }} state=directory owner={{ item.name }} mode=0711
+  with_items: users
+  always_run: yes
+  
