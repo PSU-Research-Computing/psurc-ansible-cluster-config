@@ -157,3 +157,11 @@ cluster_users:
     groups:
       - gaussian
   - uid: fmak
+
+
+enabled_repos:
+- CentOS-Base.repo
+- epel.repo
+
+head_node_packages:
+- tmux
