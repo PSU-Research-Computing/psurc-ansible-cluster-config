@@ -1,4 +1,44 @@
 ---
+users:
+- wpatt2
+- mahan2
+- will
+
+enabled_repos:
+- CentOS-Base.repo
+- epel.repo
+
+head_node_packages:
+- tmux
+- yum-plugin-downloadonly
+- pam_ldap
+- nss-pam-ldapd
+- nscd
+
+all_node_rpms:
+- htop
+
+config_sync:
+  - local_file: ../cluster_configs/etc/nscd.conf
+    remote_location: /etc/nscd.conf
+  - local_file: ../cluster_configs/etc/nslcd.conf
+    remote_location: /etc/nslcd.conf
+  - local_file: ../cluster_configs/etc/nsswitch.conf
+    remote_location: /etc/nsswitch
+  - local_file: ../cluster_configs/etc/pam_ldap.conf
+    remote_location: /etc/pam_ldap.conf
+  - local_file: ../cluster_configs/etc/pam.d/system-auth
+    remote_location: /etc/pam.d/system-auth
+  - local_file: ../cluster_configs/etc/pam.d/system-auth-ac
+    remote_location: /etc/pam.d/system-auth-ac
+  - local_file: ../cluster_configs/etc/pam.d/password-auth
+    remote_location: /etc/pam.d/password-auth
+  - local_file: ../cluster_configs/etc/pam.d/password-auth-ac
+    remote_location: /etc/pam.d/password-auth-ac
+  - local_file: ../cluster_configs/etc/pam.d/fingerprint-auth-ac
+    remote_location: /etc/pam.d/fingerprint-auth-ac
+
+#Legacy:
 cluster_groups:
 - wheel
 - gaussian
@@ -10,14 +50,4 @@ cluster_users:
       - wheel
       - gaussian
 
-enabled_repos:
-- CentOS-Base.repo
-- epel.repo
 
-head_node_packages:
-- tmux
-- yum-plugin-downloadonly
-
-all_node_rpms:
-- htop
-- cowsay
