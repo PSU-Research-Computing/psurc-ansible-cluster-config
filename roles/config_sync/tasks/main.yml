@@ -1,0 +1,15 @@
+---
+- name: Check for Symlinks
+  stat: path={{ item.remote_location }}
+  register: file_stats
+  with_items: config_sync
+
+- name: Unlink Symlinks
+  command: unlink {{ item.item.remote_location }}
+  with_items: file_stats.results
+  when: item.stat.exists and item.stat.islnk
+
+- name: Sync Config Files
+  copy: src={{ item.local_file }} dest={{ item.remote_location }} owner=root 
+  with_items: config_sync
+
