@@ -20,3 +20,4 @@ head_node_packages:
 
 all_node_rpms:
 - htop
+- cowsay
