@@ -1,0 +1,4 @@
+---
+- name: Disable Repos
+  replace: dest=/etc/yum.repos.d/{{ item }} regexp='^enabled = 1' replace='enabled = 0' backup=yes
+  with_items: enabled_repos
