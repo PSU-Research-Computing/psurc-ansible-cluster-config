@@ -1,0 +1,8 @@
+---
+- hosts: arc-clusters
+  gather_facts: true
+  roles:
+    - yum_install
+    - rpm_install
+    - config_sync
+    - build_homes
