@@ -15,6 +15,16 @@
   shell: "cp /export/rocks/install/site-profiles/6.2/nodes/skeleton.xml /export/rocks/install/site-profiles/6.2/nodes/extend-compute.xml"
   when: not extend.stat.exists
 
+- name: Add Package Line to extend-compute.xml
+  lineinfile: dest=/export/rocks/install/site-profiles/6.2/nodes/extend-compute.xml insertbefore="<post>\n" line="<package>{{ item }}</package>"
+  with_items: all_node_rpms
+
+- name: Create New Distro
+  shell: "cd /export/rocks/install && rocks create distro"
+
+- name: Kickstart Compute Nodes
+  command: rocks run host compute "/boot/kickstart/cluster-kickstart-pxe ; exit"
+
 - name: Disable Repos
   replace: dest=/etc/yum.repos.d/{{ item }} regexp='^enabled = 1' replace='enabled = 0' backup=yes
   with_items: enabled_repos
