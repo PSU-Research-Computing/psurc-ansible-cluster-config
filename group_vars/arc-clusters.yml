@@ -63,16 +63,8 @@ cluster_users:
   - uid: ploikith
   - uid: fisherda
   - uid: addunham
-  - uid: alger
-    groups:
-      - gaussian
-      - wheel
   - uid: amahedy
   - uid: arom2
-  - uid: bcomnes
-    groups:
-      - gaussian
-      - wheel
   - uid: hamed2
   - uid: helaire
   - uid: jblac2
@@ -85,9 +77,6 @@ cluster_users:
   - uid: ggalen
   - uid: lawaj
   - uid: lubrown
-  - uid: mdj2
-    groups:
-      - wheel
   - uid: mkapp
     groups:
       - gaussian
@@ -103,7 +92,6 @@ cluster_users:
   - uid: shigemot
     groups:
       - gaussian
-  - uid: sisson
   - uid: sju2
     groups:
       - gaussian
@@ -147,14 +135,9 @@ cluster_users:
   - uid: d6ta
     groups:
       - bpa
-  - uid: wbaldwin
   - uid: anne
   - uid: jos22
     groups:
-      - gaussian
-  - uid: mahan2
-    groups:
-      - wheel
       - gaussian
   - uid: jescobed
     groups:
