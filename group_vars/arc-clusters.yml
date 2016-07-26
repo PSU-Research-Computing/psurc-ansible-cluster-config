@@ -5,6 +5,9 @@ cluster_groups:
 - bpa
 
 cluster_users:
+  - uid: hirving
+    groups: 
+      - gaussian
   - uid: wanglei
     groups:
       - gaussian
