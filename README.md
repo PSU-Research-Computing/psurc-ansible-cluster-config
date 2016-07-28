@@ -1,6 +1,6 @@
 # ansible-arc-cluster
 
-ansible-arc-cluster is a repository that is used to add new users to our clusters Hydra and Gravel at ARC. It was recently extened to sync user IDs and group IDs over from ldap to give users access to the share drives. 
+ansible-arc-cluster is an ansible playbook used to add new users to Rocks Clusters.
 
 Setting Up Your Local Machine
 =============================
@@ -52,7 +52,7 @@ Pushing Changes to the Cluster
 After you have added the new user(s) to the arc-clusters file run the command:
 
 ```
-    make group_sync
+    make sync
 ```
 
 This will start adding the new users to the cluster as well as syncing their uids and gids for ldap.
