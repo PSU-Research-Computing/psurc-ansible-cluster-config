@@ -1,6 +1,6 @@
-# ansible-arc-cluster
+# oitrc-ansible-cluster-config
 
-ansible-arc-cluster is an ansible playbook used to add new users to Rocks Clusters.
+oitrc-ansible-cluster-config is an ansible playbook used to create new user accounts on Rocks Clusters.
 
 Setting Up Your Local Machine
 =============================
@@ -32,7 +32,7 @@ Add Users to arc-clusters.yml
 To add new users modify the file:
 
 ```
-    ansible-arc-cluster/group_vars/arc-clusters.yml
+    oitrc-ansible-cluster-config/group_vars/arc-clusters.yml
 ```
 
 Follow the format specified below:
