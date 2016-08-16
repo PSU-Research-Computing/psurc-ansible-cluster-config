@@ -1,6 +1,6 @@
-# oitrc-ansible-cluster-config
+# psurc-ansible-cluster-config
 
-oitrc-ansible-cluster-config is an ansible playbook used to create new user accounts on Rocks Clusters.
+psurc-ansible-cluster-config is an ansible playbook used to create new user accounts on Rocks Clusters.
 
 Setting Up Your Local Machine
 =============================
