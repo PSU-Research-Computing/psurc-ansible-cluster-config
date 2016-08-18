@@ -32,7 +32,7 @@ Add Users to arc-clusters.yml
 To add new users modify the file:
 
 ```
-    oitrc-ansible-cluster-config/group_vars/arc-clusters.yml
+    psurc-ansible-cluster-config/group_vars/arc-clusters.yml
 ```
 
 Follow the format specified below:
