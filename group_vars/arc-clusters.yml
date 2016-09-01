@@ -5,6 +5,9 @@ cluster_groups:
 - bpa
 
 cluster_users:
+  - uid: arl3
+    groups:
+      - bpa
   - uid: hirving
     groups: 
       - gaussian
