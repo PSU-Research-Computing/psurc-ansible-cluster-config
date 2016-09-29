@@ -145,3 +145,7 @@ cluster_users:
     groups:
       - gaussian
   - uid: fmak
+  - uid: bjiang
+  - uid: dnaghmeh
+  - uid: kpandya
+  - uid: bjedyna2
