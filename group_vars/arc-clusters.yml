@@ -104,9 +104,6 @@ cluster_users:
     groups:
       - wheel
   - uid: td3
-  - uid: theod
-    groups:
-      - gaussian
   - uid: theresa5
     groups:
       - gaussian
