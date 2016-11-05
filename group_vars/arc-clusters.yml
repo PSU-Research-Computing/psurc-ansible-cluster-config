@@ -5,6 +5,8 @@ cluster_groups:
 - bpa
 
 cluster_users:
+  - uid: kvoronin
+  - uid: wei
   - uid: arl3
     groups:
       - bpa
